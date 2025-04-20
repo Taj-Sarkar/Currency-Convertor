@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="CurrencyConvertor.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h2>Currency Converter</h2>
+        <p>Select the currencies below:</p>
+        <form id="converterForm">
+            <div class="dropdown">
+                <label for="from">From Currency:</label>
+                <img class="flag" src="https://flagsapi.com/US/flat/64.png">
+                <!-- This is From Part of the Code -->
+                <select name="from" id="from"></select> 
+            </div>
+            <div class="dropdown">
+                <label for="to">To Currency:</label>
+                <img class="flag" src="https://flagsapi.com/IN/flat/64.png">
+                <!-- This is To Part of the Code -->
+                <select name="to" id="to"></select>
+            </div>
+            <div>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter the amount">
+            </div>
+            <div>
+                <button type="button" id="convertBtn">Convert</button>
+            </div>
+            <div>
+                <label for="convertedAmount">Converted Amount:</label>
+                <input type="number" id="convertedAmount" placeholder="Converted amount" readonly>
+            </div>
+        </form>
+    </div>
+    <script src="CountryCode.js"></script>
+    <script src="CurrencyConvertor.js"></script>
+    
+</body>
+</html>
